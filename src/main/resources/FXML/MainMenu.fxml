@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenuController">
+   <children>
+      <VBox layoutX="367.0" layoutY="154.0" prefHeight="211.0" prefWidth="124.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="98.0" text="Username:" textAlignment="CENTER" wrapText="true" />
+            <Label fx:id="username" alignment="CENTER" prefHeight="21.0" prefWidth="100.0" textAlignment="CENTER" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#goToProfileMenu" text="profile menu" textAlignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#showScoreTable" text="score table" />
+            <Button mnemonicParsing="false" onAction="#showGameSetting" text="game setting" />
+            <Button mnemonicParsing="false" onAction="#startNewGame" text="start a new game" />
+            <Button mnemonicParsing="false" onAction="#resumeGame" text="resume game" />
+            <Button mnemonicParsing="false" onAction="#exit" text="exit" />
+         </children>
+      </VBox>
+      <Circle fx:id="imageView" fill="DODGERBLUE" layoutX="411.0" layoutY="76.0" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+      <AnchorPane fx:id="settingPane" layoutX="30.0" layoutY="50.0" prefHeight="300.0" prefWidth="300.0" visible="false">
+         <children>
+            <Button fx:id="easy" layoutX="46.0" layoutY="80.0" mnemonicParsing="false" onAction="#setGameSetting" text="easy" />
+            <Button fx:id="moderate" layoutX="102.0" layoutY="80.0" mnemonicParsing="false" onAction="#setGameSetting" text="moderate" />
+            <Button fx:id="hard" layoutX="188.0" layoutY="80.0" mnemonicParsing="false" onAction="#setGameSetting" text="hard" />
+            <CheckBox layoutX="100.0" layoutY="142.0" mnemonicParsing="false" onAction="#muteOrUnmute" text="Mute" />
+            <CheckBox layoutX="100.0" layoutY="172.0" mnemonicParsing="false" onAction="#setBlackAndWhite" text="black and white" />
+            <Label layoutX="96.0" layoutY="50.0" text="slecet difficulty" />
+            <Button layoutX="110.0" layoutY="218.0" mnemonicParsing="false" onAction="#settingSet" text="done" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

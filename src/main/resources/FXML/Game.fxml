@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="waveNumber" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GameController">
+   <children>
+      <Button fx:id="pause" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#pause" stylesheets="@../CSS/style.css" text="pause" />
+      <Label fx:id="kills" layoutX="23.0" layoutY="50.0" text="kills:" />
+      <Label fx:id="accuracy" layoutX="19.0" layoutY="68.0" prefHeight="18.0" prefWidth="71.0" text="accuracy: " />
+      <AnchorPane fx:id="endGame" layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <children>
+            <Label layoutX="70.0" layoutY="14.0" text="Game Won" />
+            <Button layoutX="46.0" layoutY="41.0" mnemonicParsing="false" onAction="#goToMainMenu" text="Go to main menu" />
+            <Button layoutX="63.0" layoutY="74.0" mnemonicParsing="false" onAction="#newGame" text="New Game" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pauseMenu" layoutX="184.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <children>
+            <Button layoutX="37.0" layoutY="31.0" mnemonicParsing="false" onAction="#saveAndLeave" text="save game and leave" />
+            <Button layoutX="27.0" layoutY="74.0" mnemonicParsing="false" onAction="#leaveAndDontSave" text="just leave and don't save" />
+            <Button layoutX="59.0" layoutY="115.0" mnemonicParsing="false" onAction="#pauseMusic" text="pause music" />
+            <Button layoutX="27.0" layoutY="160.0" mnemonicParsing="false" onAction="#firstSong" text="first" />
+            <Button layoutX="73.0" layoutY="160.0" mnemonicParsing="false" onAction="#SecondSong" text="second" />
+            <Button layoutX="138.0" layoutY="160.0" mnemonicParsing="false" onAction="#thirdSong" text="third" />
+            <Button layoutX="55.0" layoutY="1.0" mnemonicParsing="false" onAction="#resumeGame" text="resume game" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="13.0" layoutY="86.0" text="wave = " />
+      <Label layoutX="8.0" layoutY="104.0" text="radioActive = " />
+      <Label layoutX="9.0" layoutY="122.0" text="cluster = " />
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/BackGround.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AvatarMenuController">
+   <children>
+      <Button layoutX="90.0" layoutY="72.0" mnemonicParsing="false" onAction="#randomAvatar" stylesheets="@../CSS/BackGround.css" text="random avatar" />
+      <Button layoutX="63.0" layoutY="110.0" mnemonicParsing="false" onAction="#chooseBetweenOptions" text="choose between options" />
+      <Button layoutX="66.0" layoutY="149.0" mnemonicParsing="false" onAction="#chooseFileFromSystem" text="choose file from system" />
+      <Circle fx:id="avatarImage" disable="true" fill="#0084ff" layoutX="420.0" layoutY="110.0" onDragDropped="#dragDropped" onDragOver="#dragOver" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="image5" fill="DODGERBLUE" layoutX="420.0" layoutY="345.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="image4" fill="DODGERBLUE" layoutX="335.0" layoutY="345.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="image6" fill="DODGERBLUE" layoutX="505.0" layoutY="346.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="image1" fill="DODGERBLUE" layoutX="335.0" layoutY="260.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="image2" fill="DODGERBLUE" layoutX="420.0" layoutY="260.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="image3" fill="DODGERBLUE" layoutX="505.0" layoutY="260.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+   </children>
+</AnchorPane>

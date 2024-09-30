@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: 33; -fx-background-image: dsad;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginMenuController">
+   <children>
+      <TextField fx:id="username" alignment="CENTER" layoutX="34.0" layoutY="139.0" promptText="username" />
+      <TextField fx:id="password" accessibleRole="PASSWORD_FIELD" alignment="CENTER" layoutX="32.0" layoutY="209.0" promptText="password" />
+      <Label ellipsisString="" layoutX="81.0" layoutY="112.0" text="Username" textFill="#ea2828" textOverrun="CLIP" />
+      <Label layoutX="81.0" layoutY="182.0" text="Password" />
+      <Button alignment="CENTER" layoutX="51.0" layoutY="244.0" mnemonicParsing="false" onAction="#login" text="Login" />
+      <Button alignment="CENTER" layoutX="79.0" layoutY="299.0" mnemonicParsing="false" onAction="#goToRegisterMenu" text="Register" />
+      <Button layoutX="118.0" layoutY="244.0" mnemonicParsing="false" onAction="#enterGame" text="As Guest" />
+      <Label layoutX="86.0" layoutY="84.0" styleClass="custom-label" stylesheets="@../CSS/style.css" text="Login">
+         <font>
+            <Font name="Microsoft Uighur Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="281.0" text="Hasn't register yet?" />
+   </children>
+</AnchorPane>
